@@ -12,7 +12,7 @@ Examples:
     | click()             |frmAgregarRecordatorio()|
 
 
-Scenario: El usuario desea registrar un recordatorio de una actividad prioritaria.
+Scenario: El usuario registra existosamente un recordatorio de una actividad prioritaria.
 Given el usuario se encuentra en los campos de texto para agregar recordatorio y completar la información requerida
 como [Nombre de recordatorio],[Descripción del Recordatorio],
 [Fecha de Recordatorio] y [Hora de Recordatorio].
@@ -28,16 +28,3 @@ Examples:
                                                                                          |comunicar al grupo para entregar|  esta proxima a vencer,            |
                                                                                                                           | recuerda cumplir con los plazos    |  
                                                                                                                 
-
-Scenario: El cliente desea que le lleguen notificaciones de cuándo debe realizar cada actividad.
-Given que el usuario está fuera de la aplicación y según 
-la hora debe realizar una actividad de estudio.
-When sea la hora de realizar esa actividad
-Then la aplicación mandará [notificaciones] al usuario 
-que debe realizar dicha actividad y al finalizar 
-[marcarla como completada]. Por otro lado, si no 
-se marca como completada, la aplicación lo tomará
- como una actividad no realizada.
- Examples:
-     | Fecha y Hora del Telefono |Notificación                                                         | Marcar como Completa |Eliminar Actividad|
-     | 15/06/2022, 13:00         |La actividad "TB4 de Especificación" vencerá en 10 horas y 59 minutos| click()              |ElimAct(obj act)  |

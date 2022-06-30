@@ -1,4 +1,4 @@
-Feature: HU07: Como usuario de la aplicación quiero tener una tabla interactiva para registrar mis notas para tener una base para compararlas a futuro.
+Feature: HU08: Como usuario de la aplicación quiero tener una tabla interactiva para registrar mis notas para tener una base para compararlas a futuro.
 Scenario: El usuario registra sus notas 
 
 Given que el estudiante inició sesión correctamente 
@@ -16,3 +16,4 @@ Then el sistema verificará los datos y guardará su progreso.
 Examples:
     | Actividades de esta Semana | Realizadas | Aprobadas |Pregunta(opcional)|Mensaje              |
     | 10                         | 9          | 8         |NULL              |Progresos Registrados|
+
